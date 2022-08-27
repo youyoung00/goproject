@@ -41,10 +41,41 @@ func main() {
 	// 	fmt.Println(nums[i])
 	// }
 
-	var t [5]float64 = [5]float64{24.0, 25.9, 27.8, 26.9, 26.2}
+	// var t [5]float64 = [5]float64{24.0, 25.9, 27.8, 26.9, 26.2}
 
-	for i, v := range t {
-		fmt.Println(i, v)
+	// for i, v := range t {
+	// 	fmt.Println(i, v)
+	// }
+
+	// a := [5]int{1, 2, 3, 4, 5}
+	// b := [5]int{500, 400, 300, 200, 100}
+
+	// for i, v := range a {
+	// 	fmt.Printf("a[%d] = %d\n", i, v)
+	// }
+
+	// fmt.Println()
+	// for i, v := range b {
+	// 	fmt.Printf("b[%d] = %d\n", i, v)
+	// }
+
+	// b = a
+
+	// fmt.Println()
+	// for i, v := range b {
+	// 	fmt.Printf("b[%d] = %d\n", i, v)
+	// }
+
+	a := [2][5]int{
+		{1, 2, 3, 4, 5},
+		{5, 6, 7, 8, 9},
+	}
+
+	for _, arr := range a {
+		for _, v := range arr {
+			fmt.Print(v, " ")
+		}
+		fmt.Println()
 	}
 
 }
