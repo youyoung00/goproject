@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"goproject/usepkg/custompkg"
 	"goproject/usepkg/exinit"
 	// "github.com/guptarohit/asciigraph"
@@ -11,6 +12,7 @@ func main() {
 	custompkg.PrintCustom()
 
 	exinit.PrintD()
+	fmt.Println("Test")
 	// custompkg.printcustom2() // 소문자로 시작한 함수는 외부패키지에 노출되지 않는다.
 	// expkg.PrintSample()
 
